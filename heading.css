@@ -1,0 +1,10 @@
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.button{}
+.logo{
+    width: 20%;
+}
+.icons{}
