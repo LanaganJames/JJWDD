@@ -21,7 +21,7 @@ body{
 }
 .logo{
     width: 25%;
-    height: max-content;
+    height: 100%;
 }
 .heads{
     display: flex;
