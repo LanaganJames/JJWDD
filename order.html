@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/1a178061ad.js" crossorigin="anonymous"></script>
-    <title>J & J Web Development and Design</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <title>order</title>
 </head>
 <body>
     <header>
@@ -35,9 +35,15 @@
         </div>
     </header>
     <main>
-        <h2>Who are we?</h2>
-        <p>J & J is a company that was made to support upcomming businesses by simplifying the process of creating your online presense.  Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project.</p>
-        
+        <form action="https://formsubmit.co/jjwdd.com@gmail.com" method="POST">
+            <label class="company"for="Company">Company:</label>
+            <input class="namebox" placeholder="Company..." type="text" name="Name" required>
+            <label class="email"for="email">Your Email:</label>
+            <input class="emailbox" placeholder="Email..." type="text" id="email" name="email" required>
+            <label class="message"for="Message">short idea of what you want</label>
+            <textarea class="messagebox" placeholder="Message..." rows="5" cols="60" name="text" required></textarea>
+            <a href="customize.html"><button class="submit" type="submit"></button></a>
+       </form>
     </main>
 </body>
 </html>
