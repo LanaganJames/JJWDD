@@ -35,15 +35,60 @@
         </div>
     </header>
     <main>
+        <div class="forms" >
         <form action="https://formsubmit.co/jjwdd.com@gmail.com" method="POST">
-            <label class="company"for="Company">Company:</label>
-            <input class="namebox" placeholder="Company..." type="text" name="Name" required>
-            <label class="email"for="email">Your Email:</label>
-            <input class="emailbox" placeholder="Email..." type="text" id="email" name="email" required>
-            <label class="message"for="Message">short idea of what you want</label>
-            <textarea class="messagebox" placeholder="Message..." rows="5" cols="60" name="text" required></textarea>
-            <a href="customize.html" target="_blank"><button class="submit" type="submit">send</button></a>
+            <div class="form1" id="myDIV">
+                <input id="input1" class="namebox" placeholder="Company" type="text" name="Name" required><br>
+                <input id="input1" class="emailbox" placeholder="Email" type="email" id="email" name="email" required><br>        
+                <textarea class="messagebox" placeholder="What is the website for" rows="5" cols="60" name="text" required></textarea>
+            </div>
+            <div class="form2" id="myDIV2">
+            <div class="check_q">
+                <label for="pages">How many Pages do you want?</label>
+                <input id="input2" type="number">
+                <br>
+            </div>
+            <div class="check_q">
+                <label for="logo">Do you need a Logo?</label>
+                <input id="check" type="checkbox">
+                <br>
+            </div>
+            <div class="check_q">
+                <label for="interactive">Do you want interaction?</label>
+                <input id="check" type="checkbox">
+                <br>
+            </div>
+            <div class="check_q">
+                <label for="date">When do you need it done by</label>
+                <input id="input3" type="date">
+                <br>
+            </div>
+                <button type="submit" class="submit">Submit</button>
+            </div>
        </form>
+        </div>
+       <input onclick="myFunction()" type="button" value="Next" id="myButton1"></input>
     </main>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } else {
+            x.style.display = "none";
+            }
+
+            var y = document.getElementById("myDIV2");
+            if (y.style.display === "block") {
+            y.style.display = "none";
+            } else {
+            y.style.display = "block";
+            }
+
+            var elem = document.getElementById("myButton1");
+            if (elem.value=="Back") elem.value = "Next";
+            else elem.value = "Back";
+        }
+    </script>
 </body>
 </html>

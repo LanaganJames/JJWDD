@@ -1,0 +1,20 @@
+.main_blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+}
+h3{
+    background-color: rgb(134, 0, 31, .5);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    border: 5px solid black;
+}
+.form1{
+    display: block;
+}
+.form2{
+    display: none;
+}

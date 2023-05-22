@@ -1,0 +1,86 @@
+.form1{
+    display: block;
+}
+.form2{
+    display: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+.check_q{
+    display: flex;
+    flex-direction: row;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    white-space: 10px;
+    font-size: 20px;
+}
+::placeholder {
+    color: black;
+}
+#input1{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 500px;
+    height: 30px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+#input2{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 35px;
+    height: 25px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+#input3{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 100px;
+    height: 25px;
+    font-size: small;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+#check{
+    background-color: rgb(255, 10, 10);
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+}
+textarea{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 500px;
+    height: 100px;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#myButton1{
+    background-color: rgb(255, 10, 10);
+    color: black;
+    width: 50px;
+    height: 25px;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
