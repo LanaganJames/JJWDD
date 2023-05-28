@@ -1,8 +1,12 @@
 .form1{
     display: block;
+    margin-left: 200px;
+    margin-top: 20px;
 }
 .form2{
     display: none;
+    margin-left: 200px;
+    margin-top: 20px;
 }
 form{
     display: flex;
@@ -19,9 +23,18 @@ form{
     flex-direction: column;
     white-space: 10px;
     font-size: 20px;
+    border-top: 5px black solid;
 }
 ::placeholder {
     color: black;
+}
+h5{
+    color: rgb(44, 0, 0);
+    width: 600px;
+    font-size: 50px;
+    margin: 10px;
+    margin-left: 200px;
+
 }
 #input1{
     background-color: rgb(255, 10, 10);
@@ -82,5 +95,16 @@ textarea{
     height: 25px;
     font-size: 15px;
     margin: 10px;
+    margin-left: 200px;
     cursor: pointer;
+}
+@media  only screen and (max-width: 900px) {
+    form{
+        justify-content: center;
+        margin-left: 10px;
+    }    
+    #myButton1{
+        justify-content: center;
+        margin-left: 10px;
+    }    
 }

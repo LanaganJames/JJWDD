@@ -1,20 +1,84 @@
 .main_blocks{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  border: 3px solid black;
 }
+
+/*@-webkit-keyframes spin{
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+  }
+  .spin {
+  background: conic-gradient( lightgrey, rgb(134, 0, 31), lightgrey);
+  background-size: 100% 100%;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 100%;
+  z-index: 1;
+  animation: spin 5s linear infinite;
+  position: absolute;
+  left: 13%;
+  }*/
+
 h3{
-    background-color: rgb(134, 0, 31, .5);
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    border: 5px solid black;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  position: relative;
+  background-color: transparent;
+  border: 3px solid black;
 }
-.form1{
-    display: block;
+h2{
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+  position: relative;
 }
-.form2{
-    display: none;
+.disc{
+  display: flex;
+  text-align: center;
+  font-size: large;
+  margin: 0%;
+  position: relative;
+}
+.compare_grid{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(5, 50px);
+  justify-content: center;
+  margin-top: 25px;
+}
+.compare{
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  align-self: flex-end;
+}
+#C{
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, .5);
+  border: black solid 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
