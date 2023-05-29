@@ -1,7 +1,7 @@
 .ports{
     display: grid;
     grid-template-columns: 42% 42%;
-    grid-template-rows: 150px 500px 500px 500px;
+    grid-template-rows: 10vw 35vw 35vw 35vw;
     grid-auto-flow: column;
     justify-content: center;
 }
@@ -17,4 +17,6 @@
 #ports > h2{
     display: flex;
     justify-content: flex-start;
+    font-size: 2vw;
+
 }
