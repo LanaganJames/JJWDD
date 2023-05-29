@@ -11,10 +11,10 @@
 }
 .meet{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 60%;
     margin: 40px;
-    margin-left: 100px;
+    margin-left: 20px;
 }
 h6{
     font-size: x-large;
@@ -23,3 +23,11 @@ h6{
 p{
     font-size: larger;
 }
+
+@media (orientation: portrait){
+    .meetul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    
