@@ -16,20 +16,31 @@ header{
 }
 .logo{
   width: 20%;
-  height: 100%;
+  height: auto;
+  display: flex;
+  justify-self: center;
 }
 .heads{
-  display: flex;
+  display: grid;
   flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  z-index: 1;
+}
+.icons{
+  margin-bottom: -30px;
+  z-index: 2;
 }
 h1{
   font-size: 6vw;
   color: rgb(134, 0, 31);
   margin: 0%;
   display: flex;
-  align-self: center;
+  justify-content: center;
 }
-ul {
+.ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
