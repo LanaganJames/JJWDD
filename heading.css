@@ -1,10 +1,10 @@
 body{
-  background: linear-gradient( lightgrey, rgb(134, 0, 31));
-  background-size: 1000px 2000px;
+  background: linear-gradient( rgb(169, 143, 143), rgb(187, 4, 46));
+  background-size: 1000px 3000px;
 }
 header{
   position: relative;
-  background-color: rgb(202, 180, 180);
+  background-color: rgb(169, 143, 143);
 }
 .heading{
   width: 100%;

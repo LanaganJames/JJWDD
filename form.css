@@ -5,12 +5,14 @@
 .form2{
     display: none;
     margin-top: 20px;
+    padding: 0px 50px 0px 50px;
+    width: 100%;
 }
 form{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 10px;
+    width: 100%;
 }
 .check_q{
     display: flex;
@@ -29,8 +31,10 @@ form{
 h5{
     color: rgb(44, 0, 0);
     width: 600px;
-    font-size: 50px;
+    font-size: 40px;
     margin: 10px;
+    display: flex;
+    justify-content: flex-start;
 
 }
 #input1{
@@ -84,6 +88,8 @@ textarea{
     cursor: pointer;
 }
 #myButton1{
+    display: flex;
+    flex-direction: center;
     background-color: rgb(255, 10, 10);
     color: black;
     width: 50px;
@@ -91,4 +97,5 @@ textarea{
     font-size: 15px;
     margin: 10px;
     cursor: pointer;
+
 }

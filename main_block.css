@@ -8,13 +8,41 @@ main{
   grid-template-rows: 100px 100px;
   border: 3px solid black;
 }
-h2{
+.funbuttons{
+  width: 70%;
   display: flex;
-  font-size: 7vw;
-  margin-top: 0px;
+  flex-direction: row;
+  margin: auto;
+  margin-top: 13%;
+}
+.but1{
+  display: flex;
+  width: 33%;
+  height: 33%;
   justify-content: center;
-  z-index: 2;
-  -webkit-text-stroke: 2px grey;
+}
+.but2{
+  display: flex;
+  width: 28.5%;
+  height: 28.5%;
+  justify-content: center;
+}
+.but3{
+  display: flex;
+  width: 32.5%;
+  height: 32.5%;
+  justify-content: center;
+}
+#button1{
+  transform: rotate(21.6deg);
+}
+#button2{
+  transform: rotate(21.6deg);
+  margin-top: 1%;
+}
+#button3{
+  transform: rotate(21.6deg);
+  margin-top: 10%;
 }
 .disc{
   display: flex;
@@ -33,24 +61,40 @@ main > img{
 }
 .fgrid{
   width: 100%;
-  margin-bottom: -150px;
-  z-index: 1;
+  margin-bottom: -50px;
 }
 ul{
   display: flex;
   flex-direction: column;
   font-size: x-large;
 }
-
-@media screen and (max-width: 600px){
+.side1{
+  display: none;
+}
+.side2{
+  display: none;
+}
+#mpage{
+  display: block;
+}
+#wpage{
+  display: none;
+}
+#gpage{
+  display: none;
+}
+@media screen and (min-width: 600px){
   .side1{
-    display: none;
+    display: block;
   }
   .side2{
-    display: none;
+    display: block;
   }
   .fgrid{
-    margin-bottom: -12vw;
+    margin-bottom: 0vw;
+  }
+  .funbuttons{
+    margin-top: 2%
   }
 }
 /*.side1{

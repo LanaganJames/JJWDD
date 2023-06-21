@@ -38,7 +38,12 @@
         <img class="side1" src="sidebar.png" alt="design idea">
         <div class="with">
             <img class="fgrid" src="GridHeader.png" alt="grid design">
-            <h2>Get to know us</h2>
+            <div class="funbuttons">
+                <input onclick="webChange()" type="image" src="Buttons1.png" class="but1" id="button1"></input>
+                <input onclick="andPart()" type="image" src="Buttons2.png" class="but2" id="button2"></input>
+                <input onclick="graphicAlter()" type="image" src="Buttons3.png" class="but3" id="button3"></input>
+            </div>
+        <div id="mpage">
             <p class="disc">J & J is a company that was made to support upcomming businesses by simplifying the process of creating your online presense.  Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project. <br> <br>Every business needs a website nowadays.  Website builders are cheap, but inefficient. A full stack Developer are reliable, but crazy expensive. We are right in the sweet spot, cheap and reliable.  Willing to do whatever it takes to make your online presence known.</p>
             <ul>
                 <li>$30 flat rate</li>
@@ -48,8 +53,87 @@
                 <li>Price Negotiable</li>
             </ul>
         </div>
-        <img class="side2" src="sidebar2.png" alt="design idea">
+        <div id="wpage">
+            <p>web developer</p>
+        </div>
+        <div id="gpage">
+            <p>Graphic designer</p>
+        </div>
+        </div>
+        <img class="side1" src="sidebar.png" alt="design idea">
    </main>
+   <script>
+    function webChange() {
+        var m = document.getElementById("wpage");
+        if (m.style.display === "none") {
+        m.style.display = "block";
+        }else{
+        m.style.display = "block";
+        }
+
+        var w = document.getElementById("mpage");
+        if (w.style.display === "block") {
+        w.style.display = "none";
+        }else{
+        w.style.display = "none";
+        }
+
+        var a = document.getElementById("gpage");
+        if (a.style.display === "block") {
+        a.style.display = "none";
+        }else{
+        a.style.display = "none";
+        }
+    }
+    </script>
+    <script>
+    function andPart() {
+        var b = document.getElementById("mpage");
+        if (b.style.display === "none") {
+        b.style.display = "block";
+        }else{
+        b.style.display = "block";
+        }
+
+        var c = document.getElementById("wpage");
+        if (c.style.display === "block") {
+        c.style.display = "none";
+        }else{
+        c.style.display = "none";
+        }
+
+        var d = document.getElementById("gpage");
+        if (d.style.display === "block") {
+        d.style.display = "none";
+        }else{
+        d.style.display = "none";
+        }
+    }
+    </script>
+    <script>
+    function graphicAlter() {
+        var e = document.getElementById("gpage");
+        if (e.style.display === "none") {
+        e.style.display = "block";
+        }else{
+        e.style.display = "block";
+        }
+
+        var f = document.getElementById("wpage");
+        if (f.style.display === "block") {
+        f.style.display = "none";
+        }else{
+        f.style.display = "none";
+        }
+
+        var g = document.getElementById("mpage");
+        if (g.style.display === "block") {
+        g.style.display = "none";
+        }else{
+        g.style.display = "none";
+        }
+    }
+    </script>
    <footer>
    </footer>
 </body>
