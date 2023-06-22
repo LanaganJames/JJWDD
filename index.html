@@ -35,34 +35,34 @@
         </div>
     </header>
     <main>
-        <img class="side1" src="sidebar.png" alt="design idea">
+        <img class="side1" id="sideOne" src="sidebar.png" alt="design idea">
         <div class="with">
             <img class="fgrid" src="GridHeader.png" alt="grid design">
             <div class="funbuttons">
-                <input onclick="webChange()" type="image" src="Buttons1.png" class="but1" id="button1"></input>
+                <input onclick="myMove();  webChange();" type="image" src="Buttons1.png" class="but1" id="button1"></input>
                 <input onclick="andPart()" type="image" src="Buttons2.png" class="but2" id="button2"></input>
-                <input onclick="graphicAlter()" type="image" src="Buttons3.png" class="but3" id="button3"></input>
+                <input onclick="graphicAlter();" type="image" src="Buttons3.png" class="but3" id="button3"></input>
             </div>
         <div id="mpage">
-            <p class="disc">J & J is a company that was made to support upcomming businesses by simplifying the process of creating your online presense.  Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project. <br> <br>Every business needs a website nowadays.  Website builders are cheap, but inefficient. A full stack Developer are reliable, but crazy expensive. We are right in the sweet spot, cheap and reliable.  Willing to do whatever it takes to make your online presence known.</p>
+            <p class="disc">J & J is a company that was made to support upcoming businesses by simplifying the process of creating your online presence and having confidence that your money is safe until you are satisfied. Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project. <br><br> Every business needs a website nowadays. Website builders are cheap, but inefficient. A full stack Developer are reliable, but crazy expensive. We are right in the sweet spot, cheap and reliable. Willing to do whatever it takes to make your online presence known. <br><br> To prove it we only take a $30 down payment to start working with you, and we will give you unlimited redrafts to prove that we are worth your money. </p>
             <ul>
-                <li>$30 flat rate</li>
+                <li>$30 down payment</li>
                 <li>$20 per page</li>
                 <li>$20 per image</li>
                 <li>Unlimited redrafts</li>
-                <li>Price Negotiable</li>
             </ul>
         </div>
         <div id="wpage">
-            <p>web developer</p>
+            <p class="disc">My name is James Lanagan, and I am the Web Developer.  I work with new upcoming businesses to support their vision of creating a custom website for their company. <br><br> In our current world there are only two ways to get a website. You can either hire a web developer where it will cost a minimum of $200 to even create a draft. Then on top of that you will be charged hundreds more for redrafts, images, and monthly upkeep. <br><br> The other option is you do it yourself on an online website builder. Which sounds great at first; it’s cheap and there is not back and forth every time you want to change something, but unless you are technically inclined. This will be very time-consuming and is difficult to make it look like you want it to.  That is where I come in. <br><br> With a unique business style where for only $30 you can have unlimited redrafts until you are satisfied with your personalized website.</p>
         </div>
         <div id="gpage">
-            <p>Graphic designer</p>
+            <p class="disc">My name is Jonathon Brueske, I am the Graphic Designer for J&J. <br><br> Since the beginning of high school, I have had a knack for digital art. From being the one everyone turned to for help understanding the digital design program blender in my stem class to Joining this company; I have never lost my passion. <br><br> After James approached me with the idea of starting a company, I knew I could not miss out on this opportunity. The idea of a $30 down payment for our services has motivated me to do my best work every job: while providing comfort for the customer. </p>
         </div>
         </div>
         <img class="side1" src="sidebar.png" alt="design idea">
    </main>
    <script>
+    var id = null;
     function webChange() {
         var m = document.getElementById("wpage");
         if (m.style.display === "none") {
@@ -133,6 +133,23 @@
         g.style.display = "none";
         }
     }
+    </script>
+    <script>
+var id = null;
+function myMove() {
+  var j = document.getElementById("sideOne");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++;
+      j.style.left = pos + 'px'; 
+    }
+  }
+}
     </script>
    <footer>
    </footer>
