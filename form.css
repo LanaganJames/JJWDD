@@ -96,10 +96,10 @@ textarea{
 }
 #myButton1{
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     background-color: rgb(255, 10, 10);
     color: black;
-    width: 60px;
+    width: 50px;
     height: 25px;
     font-size: 15px;
     margin: 10px;
@@ -112,5 +112,6 @@ textarea{
     }
     #myButton1{
         padding: 0% !important;
+        width: 60px;
     }
 }
