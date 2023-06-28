@@ -55,6 +55,7 @@ h5{
     font-size: small;
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 #input3{
     background-color: rgb(255, 10, 10);
@@ -64,12 +65,14 @@ h5{
     font-size: small;
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 #check{
     background-color: rgb(255, 10, 10);
     height: 25px;
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 textarea{
     background-color: rgb(255, 10, 10);
@@ -99,4 +102,12 @@ textarea{
     margin: 10px;
     cursor: pointer;
 
+}
+@media screen and (max-width: 910px) {
+    .form1{
+        width: 100%;
+    }
+    .submit{
+        font-size: 10px;
+    }
 }

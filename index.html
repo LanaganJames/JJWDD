@@ -22,7 +22,7 @@
                       <a href="javascript:void(0)" class="dropbtn" style="float:right;"><i class="fa fa-bars fa-lg" id="bars"></i></a>
                       <div class="dropdown-content">
                         <a href="order.html">Order</a>
-                        <a href="meet.html">Meet Us</a>
+                        <a href="meet.html">Grettings</a>
                         <a href="portfolio.html">Portfolio</a>
                       </div>
                     </li>
@@ -56,11 +56,27 @@
             <p class="disc">My name is James Lanagan, and I am the Web Developer.  I work with new upcoming businesses to support their vision of creating a custom website for their company. <br><br> In our current world there are only two ways to get a website. You can either hire a web developer where it will cost a minimum of $200 to even create a draft. Then on top of that you will be charged hundreds more for redrafts, images, and monthly upkeep. <br><br> The other option is you do it yourself on an online website builder. Which sounds great at first; it’s cheap and there is not back and forth every time you want to change something, but unless you are technically inclined. This will be very time-consuming and is difficult to make it look like you want it to.  That is where I come in. <br><br> With a unique business style where for only $30 you can have unlimited redrafts until you are satisfied with your personalized website.</p>
         </div>
         <div id="gpage">
-            <p class="disc">My name is Jonathon Brueske, I am the Graphic Designer for J&J. <br><br> Since the beginning of high school, I have had a knack for digital art. From being the one everyone turned to for help understanding the digital design program blender in my stem class to Joining this company; I have never lost my passion. <br><br> After James approached me with the idea of starting a company, I knew I could not miss out on this opportunity. The idea of a $30 down payment for our services has motivated me to do my best work every job: while providing comfort for the customer. </p>
+            <p class="disc">My name is Jonathon Brueske, I am the Graphic Designer for J&J. <br><br> Since the beginning of high school, I have had a knack for digital art. From being the one everyone turned to for help understanding the digital design program blender in my stem class to Joining this company; I have never lost my passion. <br><br> After James approached me with the idea of starting a company, I knew I could not miss this opportunity. The chance to prove my worth in this field is exhilarating. </p>
         </div>
         </div>
         <img class="side1" src="sidebar.png" alt="design idea">
    </main>
+   <script>
+$(function sideMove() {
+    var img = $("#sideone"),
+        width = img.get(0).width,
+        screenWidth = $(window).width(),
+        duration = 5000;
+
+    function animateBar() {
+        img.css("left", -width).animate({
+            "left": screenWidth
+        }, duration, animatePlane);
+    }
+
+    animatePlane();
+});
+   </script>
    <script>
     var id = null;
     function webChange() {

@@ -77,7 +77,7 @@ ul{
 #gpage{
   display: none;
 }
-@media screen and (min-width: 600px){
+@media screen and (min-width: 910px){
   .side1{
     display: block;
   }
