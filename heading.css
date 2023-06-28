@@ -1,10 +1,11 @@
 body{
-  background: linear-gradient( rgb(185, 139, 139), rgb(215, 36, 36));
+  background: linear-gradient( rgb(211, 194, 194), rgb(218, 44, 44));
   background-size: 1000px 3000px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header{
   position: relative;
-  background-color: rgb(185, 139, 139);
+  background-color: rgb(212, 185, 185);
 }
 .heading{
   width: 100%;
@@ -36,6 +37,7 @@ header{
 h1{
   font-size: 6vw;
   color: rgb(134, 0, 31);
+  text-shadow: 5px 5px 10px #000;
   margin: 0%;
   display: flex;
   justify-content: center;
