@@ -24,7 +24,10 @@ form{
     white-space: 10px;
     font-size: 20px;
     border-top: 5px black solid;
-    width: 55%;
+    width: 80%;
+}
+label{
+    margin: 10px;
 }
 ::placeholder {
     color: black;
@@ -55,7 +58,7 @@ h5{
     font-size: small;
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    margin: 10px;
 }
 #input3{
     background-color: rgb(255, 10, 10);
@@ -65,14 +68,14 @@ h5{
     font-size: small;
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    margin: 10px;
 }
 #check{
     background-color: rgb(255, 10, 10);
     height: 25px;
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
+    margin: 10px;
 }
 textarea{
     background-color: rgb(255, 10, 10);
@@ -107,7 +110,7 @@ textarea{
     .form1{
         width: 100%;
     }
-    .submit{
-        font-size: 10px;
+    #mybutton1{
+        padding: 0;
     }
 }
