@@ -35,138 +35,143 @@
         </div>
     </header>
     <main>
-        <img class="side1" id="sideOne" src="SideBar2.png" alt="design idea">
+        <img class="side1" id="sideOne" src="SideBar.png" alt="design idea">
         <div class="with">
             <img class="fgrid" src="GridHeader.png" alt="grid design">
+            <div class="mar">
             <div class="funbuttons">
                 <input onclick="myMove();  webChange();" type="image" src="Buttons1.png" class="but1" id="button1"></input>
                 <input onclick="andPart()" type="image" src="Buttons2.png" class="but2" id="button2"></input>
                 <input onclick="graphicAlter();" type="image" src="Buttons3.png" class="but3" id="button3"></input>
             </div>
+            </div>
         <div id="mpage">
-            <p class="disc">J & J is a company that was made to support upcoming businesses by simplifying the process of creating your online presence and having confidence that your money is safe until you are satisfied. Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project. <br><br> Every business needs a website nowadays. Website builders are cheap, but inefficient. A full stack Developer are reliable, but crazy expensive. We are right in the sweet spot, cheap and reliable. Willing to do whatever it takes to make your online presence known. <br><br> To prove it we only take a $30 down payment to start working with you, and we will give you unlimited redrafts to prove that we are worth your money. </p>
+            <p class="disc">J & J is a company that was made to support upcoming businesses by simplifying the process of creating your online presence and having confidence that your money is safe until you are satisfied. Hand crafted Websites, meticulous digital design, and affordable prices will make us the optimal partners for your project. <br><br> Every business needs a website nowadays. Website builders are cheap, but inefficient. A full stack Developer are reliable, but crazy expensive. We are right in the sweet spot, cheap and reliable. Willing to do whatever it takes to make your online presence known. <br><br> with $0 to start working making your website, and we will give you unlimited redrafts until you are satisfied. </p>
             <ul>
-                <li>$30 down payment</li>
-                <li>$20 per page</li>
+                <li>$0 startup fee</li>
+                <li>$200 base fee</li>
+                <li>$40 per page</li>
                 <li>$20 per image</li>
                 <li>Unlimited redrafts</li>
+                <li>monthly payments tailored to need</li>
             </ul>
         </div>
         <div id="wpage">
-            <p class="disc">My name is James Lanagan, and I am the Web Developer.  I work with new upcoming businesses to support their vision of creating a custom website for their company. <br><br> In our current world there are only two ways to get a website. You can either hire a web developer where it will cost a minimum of $200 to even create a draft. Then on top of that you will be charged hundreds more for redrafts, images, and monthly upkeep. <br><br> The other option is you do it yourself on an online website builder. Which sounds great at first; it’s cheap and there is not back and forth every time you want to change something, but unless you are technically inclined. This will be very time-consuming and is difficult to make it look like you want it to.  That is where I come in. <br><br> With a unique business style where for only $30 you can have unlimited redrafts until you are satisfied with your personalized website.</p>
+            <p class="disc">My name is James Lanagan, and I am the Web Developer.  I work with new upcoming businesses to support their vision of creating a custom website for their company. <br><br> In our current world it seems like website Developers are not needed anymore. you can easily make your own, but what they forget to mention is now you must learn how to do it yourself on an online website builder. Which sounds great at first; it’s cheap and there is not back and forth every time you want to change something, but unless you are technically inclined. This will be very time-consuming and is difficult to make it look like you want it to.  That is where I come in. <br><br> For free you can have unlimited redrafts until you are satisfied with your personalized website.</p>
         </div>
         <div id="gpage">
-            <p class="disc">My name is Jonathon Brueske, I am the Graphic Designer for J&J. <br><br> Since the beginning of high school, I have had a knack for digital art. From being the one everyone turned to for help understanding the digital design program blender in my stem class to Joining this company; I have never lost my passion. <br><br> After James approached me with the idea of starting a company, I knew I could not miss this opportunity. The chance to prove my worth in this field is exhilarating. </p>
+            <p class="disc">My name is Jonathon Brueske, I am the Graphic Designer for J&J. <br><br> Since as far back as I can remember I have always loved the world of art and design, and in my early years of high school I was shown a broader horizon in digital art and media. I eventually grew my skills, abilities, and understanding; becoming the one everyone turned to for help in my graphics design classes. I also became a peer teacher at one point to further my knowledge of the design world. Over the last five years I have continued to further develop my work by expanding my understandings of adobe photoshop and a few other smaller software’s <br><br> After James approached me with the idea of starting a company, I knew I could not miss this opportunity. The chance to prove my abilities and drive my passion for design even further beyond.  </p>
         </div>
         </div>
-        <img class="side1" src="sidebar.png" alt="design idea">
+        <img class="side1" src="SideBar2.png" alt="design idea">
    </main>
+  
    <script>
-$(function sideMove() {
-    var img = $("#sideone"),
-        width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 5000;
-
-    function animateBar() {
-        img.css("left", -width).animate({
-            "left": screenWidth
-        }, duration, animatePlane);
-    }
-
-    animatePlane();
-});
-   </script>
-   <script>
+    $(function sideMove() {
+        var img = $("#sideone"),
+            width = img.get(0).width,
+            screenWidth = $(window).width(),
+            duration = 5000;
+    
+        function animateBar() {
+            img.css("left", -width).animate({
+                "left": screenWidth
+            }, duration, animatePlane);
+        }
+    
+        animatePlane();
+    });
+       </script>
+       <script>
+        var id = null;
+        function webChange() {
+            var m = document.getElementById("wpage");
+            if (m.style.display === "none") {
+            m.style.display = "block";
+            }else{
+            m.style.display = "block";
+            }
+    
+            var w = document.getElementById("mpage");
+            if (w.style.display === "block") {
+            w.style.display = "none";
+            }else{
+            w.style.display = "none";
+            }
+    
+            var a = document.getElementById("gpage");
+            if (a.style.display === "block") {
+            a.style.display = "none";
+            }else{
+            a.style.display = "none";
+            }
+        }
+        </script>
+        <script>
+        function andPart() {
+            var b = document.getElementById("mpage");
+            if (b.style.display === "none") {
+            b.style.display = "block";
+            }else{
+            b.style.display = "block";
+            }
+    
+            var c = document.getElementById("wpage");
+            if (c.style.display === "block") {
+            c.style.display = "none";
+            }else{
+            c.style.display = "none";
+            }
+    
+            var d = document.getElementById("gpage");
+            if (d.style.display === "block") {
+            d.style.display = "none";
+            }else{
+            d.style.display = "none";
+            }
+        }
+        </script>
+        <script>
+        function graphicAlter() {
+            var e = document.getElementById("gpage");
+            if (e.style.display === "none") {
+            e.style.display = "block";
+            }else{
+            e.style.display = "block";
+            }
+    
+            var f = document.getElementById("wpage");
+            if (f.style.display === "block") {
+            f.style.display = "none";
+            }else{
+            f.style.display = "none";
+            }
+    
+            var g = document.getElementById("mpage");
+            if (g.style.display === "block") {
+            g.style.display = "none";
+            }else{
+            g.style.display = "none";
+            }
+        }
+        </script>
+        <script>
     var id = null;
-    function webChange() {
-        var m = document.getElementById("wpage");
-        if (m.style.display === "none") {
-        m.style.display = "block";
-        }else{
-        m.style.display = "block";
-        }
-
-        var w = document.getElementById("mpage");
-        if (w.style.display === "block") {
-        w.style.display = "none";
-        }else{
-        w.style.display = "none";
-        }
-
-        var a = document.getElementById("gpage");
-        if (a.style.display === "block") {
-        a.style.display = "none";
-        }else{
-        a.style.display = "none";
-        }
-    }
-    </script>
-    <script>
-    function andPart() {
-        var b = document.getElementById("mpage");
-        if (b.style.display === "none") {
-        b.style.display = "block";
-        }else{
-        b.style.display = "block";
-        }
-
-        var c = document.getElementById("wpage");
-        if (c.style.display === "block") {
-        c.style.display = "none";
-        }else{
-        c.style.display = "none";
-        }
-
-        var d = document.getElementById("gpage");
-        if (d.style.display === "block") {
-        d.style.display = "none";
-        }else{
-        d.style.display = "none";
-        }
-    }
-    </script>
-    <script>
-    function graphicAlter() {
-        var e = document.getElementById("gpage");
-        if (e.style.display === "none") {
-        e.style.display = "block";
-        }else{
-        e.style.display = "block";
-        }
-
-        var f = document.getElementById("wpage");
-        if (f.style.display === "block") {
-        f.style.display = "none";
-        }else{
-        f.style.display = "none";
-        }
-
-        var g = document.getElementById("mpage");
-        if (g.style.display === "block") {
-        g.style.display = "none";
-        }else{
-        g.style.display = "none";
-        }
-    }
-    </script>
-    <script>
-var id = null;
-function myMove() {
-  var j = document.getElementById("sideOne");   
-  var pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 350) {
+    function myMove() {
+      var j = document.getElementById("sideOne");   
+      var pos = 0;
       clearInterval(id);
-    } else {
-      pos++;
-      j.style.left = pos + 'px'; 
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++;
+          j.style.left = pos + 'px'; 
+        }
+      }
     }
-  }
-}
-    </script>
+        </script>
    <footer>
    </footer>
 </body>
